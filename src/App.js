@@ -59,8 +59,11 @@ function App() {
   });
 
   return (
-    <div className="App">
-      <h1>Task Management App</h1>
+    <div className="py-5">
+      <h1 className="text-center text-4xl text-purple-500 font-bold py-5">
+        Task Management App
+      </h1>
+
       <TeamFrom onCreate={handleCreateTeam} />
       <TaskForm onCreate={handleCreateTask} />
       <TeamList teams={teams} onLeave={handleLeaveTeam} />
