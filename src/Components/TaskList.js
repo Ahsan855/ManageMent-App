@@ -3,7 +3,7 @@ import Task from "./Task";
 
 const TaskList = ({ tasks, onUpdate, onDelete }) => {
   return (
-    <div>
+    <div className="text-center">
       <h2>Task List</h2>
       {tasks.map((task) => (
         <Task

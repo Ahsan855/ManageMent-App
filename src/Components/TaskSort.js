@@ -2,7 +2,7 @@ import React from "react";
 
 const TaskSort = ({ onSort }) => {
   return (
-    <div>
+    <div className="text-center">
       <label>Sort by:</label>
       <select onChange={(e) => onSort(e.target.value)}>
         <option value="priority">Priority</option>

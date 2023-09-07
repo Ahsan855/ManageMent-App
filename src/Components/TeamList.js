@@ -3,7 +3,7 @@ import Team from "./Team";
 
 const TeamList = ({ teams, onLeave }) => {
   return (
-    <div>
+    <div className="text-center">
       <h2>Your Teams</h2>
       {teams.map((team) => (
         <Team key={team.id} team={team} onLeave={onLeave} />

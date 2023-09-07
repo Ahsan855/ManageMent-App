@@ -2,7 +2,7 @@ import React from "react";
 
 const TaskFilter = ({ onFilter }) => {
   return (
-    <div>
+    <div className="text-center">
       <label>Filter by Status:</label>
       <select onChange={(e) => onFilter("status", e.target.value)}>
         <option value="all">All</option>

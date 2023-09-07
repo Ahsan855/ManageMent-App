@@ -25,7 +25,7 @@ const Task = ({ task, onUpdate, onDelete }) => {
             onChange={(e) =>
               setEditedTask({ ...editedTask, description: e.target.value })
             }
-          />
+          />{" "}
           <input
             type="date"
             value={editedTask.dueDate}
@@ -39,6 +39,7 @@ const Task = ({ task, onUpdate, onDelete }) => {
               setEditedTask({ ...editedTask, priority: e.target.value })
             }
           >
+            <br />
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
